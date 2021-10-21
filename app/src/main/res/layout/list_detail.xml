@@ -13,33 +13,36 @@
         android:id="@+id/img"
         android:layout_width="?android:attr/listPreferredItemHeight"
         android:layout_height="?android:attr/listPreferredItemHeight"
-        android:layout_weight="1" />
+        android:layout_weight="0" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginStart="16dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/score"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="score" />
+
+        <TextView
             android:id="@+id/title"
+            android:textSize="11sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="title" />
 
         <TextView
             android:id="@+id/type"
+            android:textSize="11sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="type" />
 
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="score" />
 
     </LinearLayout>
 

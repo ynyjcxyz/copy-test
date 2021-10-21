@@ -8,6 +8,9 @@ import com.ryanharter.auto.value.gson.GenerateTypeAdapter;
 @GenerateTypeAdapter
 @AutoValue
 public abstract class AnimeInfo {
+    @SerializedName("mal_id")
+    abstract int id();
+
     @Nullable
     @SerializedName("image_url")
     abstract String imgUrl();
@@ -24,7 +27,7 @@ public abstract class AnimeInfo {
     @SerializedName("score")
     abstract String score();
 
-    public static AnimeInfo create(String imgUrl, String title, String type,String score) {
-        return new AutoValue_AnimeInfo(imgUrl, title, type, score);
+    public static AnimeInfo create(int id ,String imgUrl, String title, String type,String score) {
+        return new AutoValue_AnimeInfo(id,imgUrl, title, type, score);
     }
 }

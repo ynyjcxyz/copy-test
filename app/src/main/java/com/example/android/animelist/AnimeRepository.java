@@ -15,7 +15,7 @@ public class AnimeRepository {
         GsonConverterFactory factory = GsonConverterFactory.create(enhancedGson);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.jikan.moe/")
+                .baseUrl("https://api.jikan.moe/v3/search/")
                 .addConverterFactory(factory)
                 .build();
         AnimeService service = retrofit.create(AnimeService.class);

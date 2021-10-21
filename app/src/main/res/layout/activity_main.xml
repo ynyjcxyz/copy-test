@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:divider="#00B0FF"
             android:dividerHeight="1dp"
-            android:background="#D5D2B9"
+            android:background="#EFEEE6"
             android:orientation="vertical" />
     </LinearLayout>
 

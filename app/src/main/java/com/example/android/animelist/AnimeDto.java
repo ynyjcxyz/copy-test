@@ -3,7 +3,6 @@ package com.example.android.animelist;
 import com.google.auto.value.AutoValue;
 import com.google.gson.annotations.SerializedName;
 import com.ryanharter.auto.value.gson.GenerateTypeAdapter;
-
 import java.util.List;
 
 @GenerateTypeAdapter
