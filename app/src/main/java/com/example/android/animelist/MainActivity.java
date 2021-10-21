@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public Loader<List<AnimeInfo>> onCreateLoader(int id, @Nullable Bundle bundle) {
         Log.i(LOG_TAG, "This is onCreateLoader() callback");
-        return new InfoLoader(MainActivity.this, ANIME_LIST_URL);
+        return new InfoLoader(MainActivity.this, "naruto");
     }
 
     @Override
