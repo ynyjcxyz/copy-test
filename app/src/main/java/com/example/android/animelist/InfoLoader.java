@@ -14,8 +14,7 @@ public class InfoLoader extends AsyncTaskLoader<List<AnimeInfo>> {
 
     public InfoLoader(@NonNull Context context, String url) {
         super(context);
-        String[] newStr = url.split("v3/");
-        query = newStr[1];
+        query = url;
     }
 
     @Override
